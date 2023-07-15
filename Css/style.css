@@ -1,0 +1,176 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+ a {
+text-decoration: none;
+}
+/* Start Component */
+.main-heading h6::after {
+  content: '';
+  position: absolute;
+  bottom: -16px;
+  height: 2px;
+  width: 120px;
+  background-color: var(--green-color);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.btn {
+  color: var(--yellow-color);
+  background-color: var(--red-color);
+}
+.btn:hover{
+  color: var(--yellow-color);
+  background-color: var(--red-color);
+}
+/* End Component */
+/* Start Navbar */
+.navbar {
+  background-color: var(--dark-color);
+}
+.nav-link {
+  font-weight: bold;
+  color: white;
+}
+.navbar-toggler {
+  border:1px solid white ;
+}
+.navbar-toggler:focus{
+  box-shadow: none;
+}
+.navbar-toggler[aria-expanded="true"] {
+  border-color: var(--green-color);
+}
+.nav-link:focus, .nav-link:hover,.active{
+  color: var(--green-color);
+}
+.search {
+  color: var(--green-color);
+  border-left:1px solid var(--green-color);
+}
+.main-btn {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+}
+/* End Navbar */
+/* Start Landing */
+.landing {
+  height: calc(100vh - 72px);
+  background: var(--dark-color);
+}
+/* End Landing */
+/* Start Features */
+.features {
+  text-align: center;
+}
+.nums {
+  font-size: 12rem;
+  color: var(--section-color);
+}
+.box .ic-2 {
+  color: var(--green-color);
+  font-size: 60px;
+  bottom: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+}
+.box h3 {
+  color: var(--yellow-color);
+}
+/* End Features */
+/* Start Our Work  */
+.our-work{
+  background-color: var(--section-color);
+}
+.our-work .container ul li{
+  cursor: pointer;
+}
+.our-work .container ul li:not(.active):hover{
+  color: var(--red-color);
+}
+.our-work .container .active {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+}
+.our-work .container .row .box{
+  padding: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.our-work .container .row .box::before {
+  content: attr(data-work);
+  position: absolute;
+  top: 50%;
+  left: -105%;
+  z-index: 34;
+  transform: translate(-50%,-50%);
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: rgb(51 209 204 / 76%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white ;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.3s;
+}
+.our-work .container .row .box:hover::before {
+  left: 50%;
+}
+/* End Our Work  */
+.stuff .container>p{max-width: 500px;}
+/* Start Teams */
+.teams{
+  background-color: var(--section-color);
+}
+.teams h2 {color: var(--yellow-color);}
+.teams .text h3{
+  background-color: var(--green-color);
+}
+/* End Teams */
+.project {background-color: var(--dark-color);}
+.blogs .box { transition:0.3s ; border-radius:6px ; -webkit-border-radius:6px ; -moz-border-radius:6px ; -ms-border-radius:6px ; -o-border-radius:6px ; -webkit-transition:0.3s ; -moz-transition:0.3s ; -ms-transition:0.3s ; -o-transition:0.3s ; }
+.blogs .box img {border-top-left-radius: 6px; border-top-right-radius: 6px;}
+.blogs .box:hover{ box-shadow: 0 0 10px #aaa; transform:translateY(-10px) ; -webkit-transform:translateY(-10px) ; -moz-transform:translateY(-10px) ; -ms-transform:translateY(-10px) ; -o-transform:translateY(-10px) ; }
+.subscribe {background-color: var(--yellow-color);}
+.subscribe input {background-color: transparent; border: none;border-bottom: 1px solid white; width: 100%;}
+.subscribe input::placeholder {color: white;}
+.subscribe input:focus{outline: none;}
+.sub-btn {background-color: var(--dark-color);}
+footer {
+  background-color: var(--dark-color);
+}
+footer h6 span {color: var(--green-color);}
+footer h5 span {color: var(--yellow-color);}
+.fa-facebook {
+  background-color: #1877f2;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.fa-twitter {
+  background-color:#1da1f2 ;
+  border-radius: 50%;
+}
+.fa-youtube {
+  background-color: red;
+  border-radius: 50%;
+}
+.fa-linkedin {
+  background-color:#0077b5 ;
+  border-radius: 50%;
+}
